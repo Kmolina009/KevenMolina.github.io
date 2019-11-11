@@ -1,0 +1,39 @@
+/* Main body */
+body{
+    display: grid;
+    grid-area: main;
+    background-color: rgb(230, 104, 1);
+    
+}
+/* NavBar */
+nav{
+    width: 200px;
+    display: grid;
+    grid-area:nav;
+    grid-gap:10px;
+    background-color: rgb(174, 214, 247);
+    padding: 10px;
+    /* text-align: center; */
+}
+nav a {
+    background-color:  rgb(230, 104, 1);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    grid-auto-columns: auto;
+}
+h1{
+    font-size: 30rem;
+}
+
+/* Main Body */
+main{
+    height: 2000px;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    'nav body'
+    'nav body'
+    ;
+    background-color: bisque;
+}
