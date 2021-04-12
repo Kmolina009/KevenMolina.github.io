@@ -1,39 +1,152 @@
-/* Main body */
+/* CSS imports*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+/* Custom properties */
+/* Fonts */
+/* Colors */
+/* Background Images/ Image sections */
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+    height: 100vh;
+    width: 100vw;
+}
+/* body element */
 body{
-    display: grid;
-    grid-area: main;
-    background-color: rgb(230, 104, 1);
-    
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(3, 4, 36,.67);
+    background-image: url("../assets/black-graph-paper-texture-body.png");
+    background-repeat: repeat;
+    background-size: 100vh 100vw;
 }
-/* NavBar */
-nav{
-    width: 200px;
-    display: grid;
-    grid-area:nav;
-    grid-gap:10px;
-    background-color: rgb(174, 214, 247);
-    padding: 10px;
-    /* text-align: center; */
+ /* Header */
+ header{
+    position: relative;
+    /* left: 100px; */
+    height: 150px;
+    width: 100vw;
+    margin: 0 auto;
+    font-family: 'Permanent Marker', cursive;
+    background-image: url(../assets/ripped-paper-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 135%;
+ }
+ header h1{
+    font-size: 71px;    
+    position: absolute;
+    top: 25px;
+    left: 50px;
 }
-nav a {
-    background-color:  rgb(230, 104, 1);
+ header h2{
+    position: absolute;
+    top: 90px;
+    left: 300px;
+    font-size: 29px;
+ }
+ /* Main */
+main{
+    height: 100vh;
+    width: 1280px;
+    margin: 0 auto;
+}
+main .project-presentation{ 
+    height: 737px;
+    width: 1280px;
+    margin: 0 auto;
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    grid-auto-columns: auto;
+    margin-top: 20px;
 }
-h1{
-    font-size: 30rem;
+main .project-presentation h3{ 
+    font-family: "Permanent Marker", cursive;
+    font-size: 58px;
+    color: white;
+}
+main .project-presentation figure{ 
+    position: relative;
+    top: 10px;
+    width: 917px;
+    height: 557px;
+    margin: 0 auto;
 }
 
-/* Main Body */
-main{
-    height: 2000px;
-    grid-area: main;
-    display: grid;
-    grid-template-areas: 
-    'nav body'
-    'nav body'
-    ;
-    background-color: bisque;
+main .project-presentation figure figcaption { 
+position: relative;
+top: 5px;
 }
+main .project-presentation figure figcaption i{ 
+    font-family: "roboto",sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+.project-image{
+    position: relative;
+    top: 8px;
+    height:624px;
+    width: 1024PX;
+}
+.project-image:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+ /* Footer */
+ footer{
+     position: relative;
+     top: 0px;
+    height: 100px;
+ }
+ /* classes */
+ /* id */
