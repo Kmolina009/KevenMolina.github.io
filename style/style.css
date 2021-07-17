@@ -82,13 +82,13 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 135%;
  }
- header h1{
-    font-size: 71px;    
+ .header-title h1{
     position: absolute;
+    font-size: 71px;    
     top: 25px;
     left: 50px;
 }
- header h2{
+ .header-title h2{
     position: absolute;
     top: 90px;
     left: 300px;
@@ -97,6 +97,7 @@ body{
  /* Main */
 main{
     height: 366%;
+    max-height: 366%;
     max-width: 100%;
     min-width: 320px;
     margin: 0 auto;
@@ -154,3 +155,4 @@ main .project-presentation figure figcaption i{
     height: 100px;
  }
 
+/* Width: 768px */
