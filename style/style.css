@@ -61,6 +61,8 @@ html{
     height: 100vh;
     width: 100vw;
 }
+/* *********************Desktop Styling************************ */
+
 /* body element */
 body{
     position: relative;
@@ -82,9 +84,15 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 135%;
  }
+ .header-title{
+    height: 95%;
+    width: 50%;
+    margin: 0px 0px;
+ }
  .header-title h1{
     position: absolute;
-    font-size: 71px;    
+    /* font-size: 71px;     */
+    font-size: 5vw;    
     top: 25px;
     left: 50px;
 }
@@ -92,7 +100,8 @@ body{
     position: absolute;
     top: 90px;
     left: 300px;
-    font-size: 29px;
+    /* font-size: 29px; */
+    font-size: 2.5vw;
  }
  /* Main */
 main{
@@ -104,7 +113,9 @@ main{
 }
 main .project-presentation{ 
     height: 440px;
-    height: 65%;
+    /* height: 65%; */
+    min-height: 34%;
+    max-height: 40%;
     max-width: 1280px;
     margin: 0 auto;
     text-align: center;
