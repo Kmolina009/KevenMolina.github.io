@@ -139,7 +139,7 @@ main .project-presentation figure figcaption {
 position: relative;
 top: 5px;
 }
-main .project-presentation figure figcaption i{ 
+.project-presentation figure figcaption i{ 
     font-family: "roboto",sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -213,8 +213,8 @@ main .project-presentation figure figcaption i{
     main{
         height: 118%;
     }
-    figure figcaption i{
+    .project-presentation figure figcaption i{
         /* font-size: 1.5rem; */
-        font-size: 1.5vw;
+        font-size: 4.5vw;
     }
 }
