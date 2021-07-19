@@ -1,3 +1,6 @@
+/* TODO */
+/* Note: The UI Breaks(overlaping of sectin at a screen width:384) */
+
 /* CSS imports*/
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,300;1,400&display=swap');
 
@@ -58,6 +61,8 @@ html{
     height: 100vh;
     width: 100vw;
 }
+/* *********************Desktop Styling************************ */
+
 /* body element */
 body{
     position: relative;
@@ -71,8 +76,7 @@ body{
  /* Header */
  header{
     position: relative;
-    /* left: 100px; */
-    height: 150px;
+    height: 19%;
     width: 100vw;
     margin: 0 auto;
     font-family: 'Permanent Marker', cursive;
@@ -80,41 +84,54 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 135%;
  }
- header h1{
-    font-size: 71px;    
+ .header-title{
+    height: 95%;
+    width: 50%;
+    margin: 0px 0px;
+ }
+ .header-title h1{
     position: absolute;
+    /* font-size: 71px;     */
+    font-size: 5vw;    
     top: 25px;
     left: 50px;
 }
- header h2{
+ .header-title h2{
     position: absolute;
-    top: 90px;
+    top: 53%;
     left: 300px;
-    font-size: 29px;
+    /* font-size: 29px; */
+    font-size: 2.5vw;
  }
  /* Main */
 main{
-    height: 100vh;
-    width: 1280px;
+    height: 366%;
+    max-height: 366%;
+    max-width: 100%;
+    min-width: 320px;
     margin: 0 auto;
 }
 main .project-presentation{ 
-    height: 737px;
-    width: 1280px;
+    height: 440px;
+    /* height: 65%; */
+    min-height: 34%;
+    max-height: 40%;
+    max-width: 1280px;
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
 }
 main .project-presentation h3{ 
     font-family: "Permanent Marker", cursive;
-    font-size: 58px;
+    font-size: 2rem;
     color: white;
 }
+
 main .project-presentation figure{ 
     position: relative;
     top: 10px;
-    width: 917px;
     height: 557px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -122,7 +139,7 @@ main .project-presentation figure figcaption {
 position: relative;
 top: 5px;
 }
-main .project-presentation figure figcaption i{ 
+.project-presentation figure figcaption i{ 
     font-family: "roboto",sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -135,8 +152,8 @@ main .project-presentation figure figcaption i{
 .project-image{
     position: relative;
     top: 8px;
-    height:624px;
-    width: 1024PX;
+    max-width: 90%;
+    min-width: 300px;
 }
 .project-image:hover{
     cursor: pointer;
@@ -148,5 +165,56 @@ main .project-presentation figure figcaption i{
      top: 0px;
     height: 100px;
  }
- /* classes */
- /* id */
+
+/* *********************Tablet Media Query********************* */
+/* Width: 768px - 425 */
+@media only screen and (max-width: 768px) {
+    header{
+        height: 10%;
+    }
+    .header-title h1{
+        position: absolute;
+        font-size: 6vw;
+        top: 10%;
+        left: 6%;
+    }
+    .header-title h2{
+        position: absolute;
+        top: 50%;
+        top: 60%;
+        left: 40%;
+        font-size: 2.5vw;
+    }
+
+    /* presentation */
+    main{
+        height:196%;
+    }
+    /* .project-presentation h3{
+    background-color: tomato;
+        font-size: !important 20xp;
+    } */
+    
+}
+/* *********************Mobile Media Query********************* */
+/* Width: 768px - 320px */
+
+@media only screen and (max-width:425px) {
+    header{
+        height:8%;
+    }
+    .header-title h1{
+        top: 5%;
+        /* left: 10%; */
+    }
+    .header-title h2{
+        top: 38%;
+    }
+    main{
+        height: 118%;
+    }
+    .project-presentation figure figcaption i{
+        /* font-size: 1.5rem; */
+        font-size: 4.5vw;
+    }
+}
