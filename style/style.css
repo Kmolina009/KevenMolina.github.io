@@ -189,6 +189,11 @@ main .project-presentation figure figcaption i{
         /* left: 300px; */
         font-size: 2.5vw;
     }
+
+    /* presentation */
+    main{
+        height:196%;
+    }
 }
 /* *********************Mobile Media Query********************* */
 /* Width: 768px - 425 */
