@@ -91,7 +91,6 @@ body{
  }
  .header-title h1{
     position: absolute;
-    /* font-size: 71px;     */
     font-size: 5vw;    
     top: 25px;
     left: 50px;
@@ -100,7 +99,6 @@ body{
     position: absolute;
     top: 53%;
     left: 300px;
-    /* font-size: 29px; */
     font-size: 2.5vw;
  }
  /* Main */
@@ -111,9 +109,40 @@ main{
     min-width: 320px;
     margin: 0 auto;
 }
+
+.section-title{
+    font-size: 4rem;
+    margin: 0 auto;
+    width: 75%;
+    text-align:center;
+    color: white;
+    font-family: "Permanent Marker", cursive;
+}
+.welcome-section{
+    height: 7%;
+    width: 50%;
+    margin: 4% auto;
+    padding: 10%;
+    font-family: "Permanent Marker", cursive;
+    background-color: rgba(244, 244, 244,.10);
+}
+.welcome-section h2{
+    font-size: 7vw;
+    color: white;
+    margin-bottom: 5%;
+    
+}
+.welcome-section h3{
+    font-size: 3.5vw;
+    color: white;
+    margin-bottom: 2%;
+}
+.welcome-section p{
+    font-size: 2vw;
+    color: white;
+}
 main .project-presentation{ 
     height: 440px;
-    /* height: 65%; */
     min-height: 34%;
     max-height: 40%;
     max-width: 1280px;
@@ -190,11 +219,10 @@ top: 5px;
     main{
         height:196%;
     }
-    /* .project-presentation h3{
-    background-color: tomato;
-        font-size: !important 20xp;
-    } */
-    
+    .welcome-section{
+        height: 11%;
+        padding-top: 5%;
+    }
 }
 /* *********************Mobile Media Query********************* */
 /* Width: 768px - 320px */
@@ -205,7 +233,6 @@ top: 5px;
     }
     .header-title h1{
         top: 5%;
-        /* left: 10%; */
     }
     .header-title h2{
         top: 38%;
@@ -214,7 +241,6 @@ top: 5px;
         height: 118%;
     }
     .project-presentation figure figcaption i{
-        /* font-size: 1.5rem; */
         font-size: 4.5vw;
     }
 }
