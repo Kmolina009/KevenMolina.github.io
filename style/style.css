@@ -166,4 +166,29 @@ main .project-presentation figure figcaption i{
     height: 100px;
  }
 
-/* Width: 768px */
+/* *********************Tablet Media Query********************* */
+/* Width: 768px - 425 */
+@media only screen and (max-width: 768px) {
+    header{
+        height: 10%;
+    }
+    .header-title h1{
+        position: absolute;
+        /* font-size: 71px; */
+        font-size: 6vw;
+        /* top: 25px; */
+        top: 10%;
+        left: 50px;
+    }
+    .header-title h2{
+        position: absolute;
+        /* top: 90px; */
+        top: 50%;
+        top: 60%;
+        left: 40%;
+        /* left: 300px; */
+        font-size: 2.5vw;
+    }
+}
+/* *********************Mobile Media Query********************* */
+/* Width: 768px - 425 */
