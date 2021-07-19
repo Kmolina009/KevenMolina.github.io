@@ -176,7 +176,7 @@ main .project-presentation figure figcaption i{
         position: absolute;
         font-size: 6vw;
         top: 10%;
-        left: 50px;
+        left: 6%;
     }
     .header-title h2{
         position: absolute;
@@ -198,9 +198,23 @@ main .project-presentation figure figcaption i{
 }
 /* *********************Mobile Media Query********************* */
 /* Width: 768px - 320px */
-@media screen(max-height:425px) {
+
+@media only screen and (max-width:425px) {
     header{
-
+        height:9%;
     }
-
+    .header-title h1{
+        top: 5%;
+        /* left: 10%; */
+    }
+    .header-title h2{
+        top: 38%;
+    }
+    main{
+        height: 118%;
+    }
+    figure figcaption i{
+        /* font-size: 1.5rem; */
+        font-size: 1.5vw;
+    }
 }
