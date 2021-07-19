@@ -201,7 +201,7 @@ top: 5px;
 
 @media only screen and (max-width:425px) {
     header{
-        height:9%;
+        height:8%;
     }
     .header-title h1{
         top: 5%;
