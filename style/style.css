@@ -113,10 +113,34 @@ main{
 }
 
 .section-title{
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0 auto;
     width: 75%;
     text-align:center;
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    /* border-bottom: 1px solid white; */
+}
+.welcome-section{
+    height: 7%;
+    width: 50%;
+    margin: 4% auto;
+    padding: 10%;
+    font-family: "Permanent Marker", cursive;
+    background-color: rgba(244, 244, 244,.10);
+}
+.welcome-section h2{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 5%;
+    
+}
+.welcome-section h3{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2%;
+}
+.welcome-section p{
     color: white;
 }
 main .project-presentation{ 
